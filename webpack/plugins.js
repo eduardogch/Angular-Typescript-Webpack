@@ -12,7 +12,7 @@ module.exports = [
     new webpack.ProgressPlugin(),
 
     new HtmlWebpackPlugin({
-        template: '../public/index.html',
+        template: '../src/index.html',
         chunksSortMode: 'dependency'
     }),
 
@@ -20,5 +20,5 @@ module.exports = [
         filename: 'css/bundle.css'
     }),
 
-    new CopyWebpackPlugin([{from: '../public'}])
+    new CopyWebpackPlugin([{from: '../src'}])
 ];
