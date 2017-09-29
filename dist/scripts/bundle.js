@@ -83,8 +83,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_angular__["module"]("example", [])
-    .config(["envServiceProvider", __WEBPACK_IMPORTED_MODULE_1__config_environment_config__["a" /* default */]]);
+__WEBPACK_IMPORTED_MODULE_0_angular__["module"]("example", []);
 
 
 /***/ }),
@@ -33994,7 +33993,7 @@ $provide.value("$locale", {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = environmentConfig;
+/* unused harmony export default */
 function environmentConfig(envServiceProvider) {
     envServiceProvider.config({
         development: {
