@@ -3,10 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Angular TypeScript Webpack</title>
-        <% for (key in htmlWebpackPlugin.files.js) { %>
-            <script type="application/json" data-src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
-        <% } %>
     </head>
     <body>
     <script type="text/javascript" src="scripts/bundle.js"></script></body>
+    <script src="scripts/bundle.js"></script>
 </html>

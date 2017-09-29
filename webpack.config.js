@@ -8,8 +8,6 @@ module.exports = {
 
     output: require('./webpack/output'),
 
-    module: require('./webpack/module'),
-
     plugins: require('./webpack/plugins'),
 
     resolve: require('./webpack/resolve'),

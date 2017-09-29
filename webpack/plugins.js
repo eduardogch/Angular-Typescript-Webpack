@@ -4,9 +4,7 @@ var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
-var ENV = process.env.npm_lifecycle_event;
-var isProd = ENV === 'build';
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = [
     new webpack.ProgressPlugin(),
@@ -20,5 +18,14 @@ module.exports = [
         filename: 'css/bundle.css'
     }),
 
-    new CopyWebpackPlugin([{from: '../public'}])
+    new CopyWebpackPlugin([{from: '../public'}]),
+
+    new BrowserSyncPlugin({
+        proxy: 'localhost:3000',
+        port: 3001,
+        notify: false,
+        browser: 'google chrome',
+        host: 'localhost',
+        open: 'local'
+    })
 ];

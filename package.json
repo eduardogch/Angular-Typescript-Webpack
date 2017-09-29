@@ -12,14 +12,16 @@
     "npm": "5.x"
   },
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server"
-  },
-  "dependencies": {
-    "express": "^4.15.4"
+    "build": "webpack --color --progress",
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "start": "npm run build && npm run dev"
   },
   "devDependencies": {
     "@types/angular": "^1.6.32",
+    "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.6",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "copy-webpack-plugin": "^4.0.1",
     "extract-text-webpack-plugin": "^3.0.0",
     "html-loader": "^0.5.1",
